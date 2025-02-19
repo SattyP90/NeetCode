@@ -10,5 +10,3 @@ class Solution:
                 seen.add(i)#or else add the new item into see hashset
         
         return False #if nothing is found return false
-
-
