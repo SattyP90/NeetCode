@@ -12,3 +12,5 @@ class Solution:
             prevMap[n] = i # if the number isnt found add it to the map with n as key and i as the value 
         return
     
+
+    
