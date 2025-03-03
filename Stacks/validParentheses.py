@@ -18,14 +18,20 @@ class Solution:
         brackets = {")":"(" , "]":"[" ,"}":"{"}
 
         for b in s: 
+            
+            
             #checking if the brackets before closing brackets are infact valid (the same)
             if b in brackets: #checking if its a closing bracket
                 #check is stack is empty (cant be empty if theres a closing bracket because there needs to be open bracket before it)
                 #and check if the last val is the corresponding bracket for that closing bracket
+                
+                
                 if stack and stack[-1] == brackets[b]:#stack -1 is that last added val to stack
                     stack.pop()#remove from that stack if vals a matching
                 else: #if previous check fail that means the list is invalid 
                     return False
+            
+            
             else:#if nothing is in the stack then just append the b item.
                 stack.append(b)
 
